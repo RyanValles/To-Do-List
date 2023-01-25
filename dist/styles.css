@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#header{
+    width: 100vw;
+    height: fit-content;
+    background-color: lightsalmon;
+}
+h1{
+    margin-left: 10px;
+    font-size:40px;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#add{
+    width: 35vw;
+    height: 3vh;
+    max-width: 500px;
+    min-height: 35px;
+    font-size: 20px;
+    margin: 10px;
+}
+#tasks{
+    background-color: rgba(255, 160, 122, 0.192);
+    display: flex;
+    width: 50vw;
+    height: 5vh;
+    min-height: 40px;
+    justify-content: space-between;
+    margin: 5px;
+}
