@@ -5,10 +5,11 @@
 import {container} from './index.js';
 import {tasks} from './index.js';
 
-export function generate(){
+function generate(){
 
+    
     let form = document.createElement('form');
-   
+    form.id = 'formId'
     let taskName = document.createElement('input');
         taskName.type = 'text';
         taskName.name = 'Task';
@@ -66,8 +67,20 @@ export function generate(){
         tasks.appendChild(priorityInputDiv)
         tasks.appendChild(editBtn)
         tasks.appendChild(delBtn)
+        //form.style.display = 'none'
+        form.removeChild(taskName);
+        form.removeChild(priority);
+        form.removeChild(date);
+        form.removeChild(submit)
+        container.removeChild(form)
   
     })
-
+    
 };
 
+export function display(){
+let theForm = document.querySelector('#formId')
+    if(!theForm){
+    return generate()
+    }
+}
